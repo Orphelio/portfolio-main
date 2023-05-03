@@ -1,0 +1,227 @@
+.skill {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+
+    &-subtitle {        
+        margin: 1rem auto;
+        text-align: center;
+        font-size: 42px;
+        font-weight: bold;
+        font-style: italic;        
+        padding: 0.5rem 2rem;
+    }
+
+    &-content {
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 3rem auto;
+        width: 70%;
+        padding: 1rem;
+        background-image: url("../../images/etoiles.webp");
+        background-size: cover;
+        background-position: center;
+        border-radius: 6px;
+    }
+    
+
+    
+
+    &-html {
+        margin:1rem;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 2px solid white;
+
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+
+    &-css {
+        margin:1rem;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 2px solid white;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+
+    &-js {
+        margin:1rem;
+        width: 150px;
+        height: 150px;
+        border: 2px solid white;
+        padding: 0.5rem;
+        border-radius: 50%;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+
+    &-node {
+        margin:1rem;
+        width: 170px;
+        height: 120px;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+
+    &-sass {
+        margin:1rem;
+        width: 150px;
+        height: 150px;
+        
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+
+    &-react {
+        margin: 1rem;
+        width: 150px;
+        height: 150px;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+
+    &-pgsql {
+        margin: 1rem;
+        width: 150px;
+        height: 150px;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+
+    &-redux {
+        margin: 1rem;
+        width: 150px;
+        height: 150px;
+        
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .skill{
+        width: 100%;
+
+        &-subtitle{
+            margin: 3rem auto;
+            font-size: 28px;
+        }
+
+        &-content{
+            margin:  auto;
+            margin-top: 0;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: none;
+            background-image: none;
+        }
+
+        &-html {
+            margin:1rem auto;
+            
+            border-radius: 50%;
+            border: 2px solid white;
+            padding: 0.25rem;
+    
+        }
+    
+        &-css {
+            margin: 1rem auto;
+            
+            border-radius: 50%;
+            border: 2px solid white;
+            padding: 0.25rem;
+    
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    
+        &-js {
+            margin: 1rem auto;
+            margin-top: 0;
+            border-radius: 50%;
+            border: 2px solid white;
+            padding: 0.5rem;
+    
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    
+        &-node {
+            margin:1.5rem auto;
+            padding: 0.5rem;
+            
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    
+        &-sass {
+            margin: 1rem auto;
+            padding: 0.5rem;
+            
+    
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    
+        &-react {
+            margin: 1rem auto;
+            padding: 0.5rem;
+    
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    
+        &-pgsql {
+            margin: 1rem auto;
+            padding: 0.5rem;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    
+        &-redux {
+            margin: 1rem auto;
+            padding: 0.5rem;
+            
+    
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+
+        
+
+    }
+    
+}

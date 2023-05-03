@@ -1,0 +1,131 @@
+.formation {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 2rem;
+    width: 60%;
+
+    &-subtitle {        
+        margin: 1rem auto;
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+        font-style: italic;        
+        padding: 0.5rem 2rem;
+    }
+
+
+    &-toeic{
+        background-color: white;
+        border: 2px solid green;
+        margin: auto;
+        height: 70px;
+        border-radius: 3px;
+    }
+
+    &-oclock{
+        border-radius: 3px;
+        border: 2px solid white;
+        margin: auto;
+        height: 70px;
+    }
+
+    &-content {
+        display: flex;
+        justify-content: center;
+        margin-top: 3rem;
+    }
+
+    &-bloc{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        margin: auto 1rem;
+        height: 400px;
+        width: 50%;
+        padding: 1rem 0;
+        border-radius: 5px;
+        border: 1px solid white;
+        color: black;
+        font-size: 22px;
+        font-style: italic;
+    }
+
+    &-title{
+        width: 100%;
+        line-height: 150%;
+        background-color: #b6b607;
+        color: black;
+        font-weight: bold;
+        height: auto;
+        text-align: center;
+        margin: auto;
+        padding: 1rem 0.5rem;
+    
+        // margin: 2rem 0; 
+        //padding: auto;
+        // min-height: 20px;
+    }
+
+    &-detail{
+        margin: 1rem;
+        color: white;
+        line-height: 150%;
+    }
+
+    &-green{
+        color: green;
+        font-weight: bold;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    .formation{
+
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+
+
+        &-subtitle{
+            font-size: 28px;
+        }
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            width: 90%;
+        }
+
+        &-bloc{
+            font-size: 22px;
+            width: 95%;
+            margin: 1rem 0;
+        }
+
+        &-profil {
+            margin: 1rem auto 3rem;
+        }
+
+        &-profil-logo {
+           display: contents;
+        }
+        &-pic {
+            width: 70%;
+        }
+
+        &-logo{
+            display: inline-flex;
+            width: 50%;
+            margin: 0.5rem;
+            background-color: black;
+        }
+
+    }
+    
+}

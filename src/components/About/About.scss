@@ -1,0 +1,135 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+
+    &-subtitle {        
+        margin: 1rem auto;
+        text-align: center;
+        font-size: 42px;
+        font-weight: bold;
+        font-style: italic;        
+        padding: 0.5rem 2rem;
+    }
+
+    &-text {
+        text-align: center;
+        width: 49%;
+        font-size: 32px;
+        line-height: 150%;
+        margin: 5rem auto;
+        padding: auto;
+        font-style: italic;
+    }
+
+    &-content {
+        
+        display: flex;
+        justify-content: center;
+        margin: 0.5rem auto;
+        width: 80%;
+    }
+
+    &-profil {
+        text-align: center;
+        margin: auto;
+    }
+
+    &-relative{
+        position: relative;
+    }
+
+    &-pic {
+        width: 50%;
+        border-radius: 5px;
+        border: 2px solid white;
+        // border-left: 2px solid #231f20;
+    }
+
+    &-videoG {
+        position: absolute;
+        width: 15%;
+        left: 14.5%;
+        bottom: -22%;
+    }
+
+    &-voyage {
+        position: absolute;
+        width: 6%;
+        bottom: 74%;
+        left: 35%;
+    }
+
+    &-panda {
+        position: absolute;
+        width: 5%;
+        top: 3.73%;
+        left: 15%;
+    }
+
+    &-soleil {
+        position: absolute;
+        width: 5%;
+        top: 2%;
+        right: 1%;
+    }
+
+    &-name {
+        width: 60%;
+        margin:0.5rem auto;
+        background-color: white;
+        color: black;
+        line-height: 150%;
+        
+    }
+
+    
+}
+
+
+@media only screen and (max-width: 960px) {
+    .about{
+        width: 100%;
+
+        &-subtitle{
+            font-size: 28px;
+        }
+
+        &-voyage {
+            margin: 0.25rem 0 1rem;
+            width: 30%;
+        }
+
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+            width: 90%;
+        }
+
+        &-text{
+            font-size: 22px;
+            width: 90%;
+            margin: 1rem 0;
+        }
+
+        &-profil {
+            margin: 1rem auto;
+        }
+        &-pic {
+            width: 70%;
+        }
+
+        &-name {
+            text-align: center;
+            width: 70%;
+            padding: 0.5rem;
+            line-height: 150%;   
+        }
+
+    }
+    
+}

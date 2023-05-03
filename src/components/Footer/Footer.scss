@@ -1,0 +1,41 @@
+.footer {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 16px;
+    margin: auto;
+    margin-top: 2rem;
+
+    &-border {
+        margin: auto;
+        width: 50%;
+        border-bottom: 0.1px solid white;
+        margin-bottom: 1rem;
+    }
+
+    &-img{
+        width: 49px;
+        margin: 1rem;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+
+    &-img-git{
+        width: 42px;
+        margin: 1rem;
+        padding: 0.25rem;
+        background-color: white;
+        border-radius: 5%;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+
+    
+
+    
+}

@@ -1,0 +1,132 @@
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 50%;
+
+    &-subtitle {        
+        margin: 2rem auto;
+        text-align: center;
+        font-size: 42px;
+        font-weight: bold;
+        font-style: italic;        
+        padding: 0.5rem 2rem;
+    }
+
+    &-text {
+        text-align: center;
+        width: 49%;
+        font-size: 32px;
+        line-height: 150%;
+        margin: 5rem auto;
+        font-style: italic;
+    }
+
+    &-panda{
+        margin: auto;
+        width: 20%;
+     }
+
+    &-content {
+        
+        display: flex;
+        justify-content: center;
+        margin: 0.5rem auto;
+        width: 70%;
+    }
+
+    &-profil {
+        text-align: center;
+        margin: auto;
+    }
+
+    &-pic {
+
+        width: 50%;
+        border-radius: 5px;
+        border: 1px solid whitesmoke;
+    }
+
+    &-videoG {
+        position: absolute;
+        width: 6%;
+        bottom: 3.1%;
+        left: 15%;
+    }
+
+    &-voyage {
+        position: absolute;
+        width: 6%;
+        bottom: 74%;
+        left: 35%;
+    }
+
+    &-soleil {
+        position: absolute;
+        width: 5%;
+        top: 2%;
+        right: 1%;
+    }
+
+    &-name {
+        margin: 1rem auto 2rem;
+        background-color: white;
+        color: black;
+        padding: 1rem;
+
+    }
+
+    
+}
+
+
+@media only screen and (max-width: 768px) {
+    .portfolio{
+        width: 100%;
+
+        &-subtitle{
+            font-size: 28px;
+        }
+
+        &-voyage {
+            margin: 0.25rem 0 1rem;
+            width: 30%;
+        }
+
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 5rem auto;
+            width: 90%;
+        }
+
+        &-text{
+            font-size: 28px;
+            width: 90%;
+            margin: 1rem 0;
+        }
+
+        &-profil {
+            margin: 1rem auto;
+        }
+        &-pic {
+            width: 70%;
+        }
+
+        &-name {
+            text-align: center;
+            width: 70%;
+            padding: 0.5rem;
+            line-height: 150%;   
+        }
+
+        &-panda{
+           width: 20%;
+        }
+
+    }
+    
+}
+

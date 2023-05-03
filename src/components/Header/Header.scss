@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Press+Start+2P&display=swap');
+
+.header {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem auto;
+
+    &-hamburger {
+        display: none;
+    }
+
+    &-bloc{
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        margin: auto;
+    }
+
+   &-links-left {
+       text-align: right;
+        display: flex;
+    //    width: 100%;
+        justify-content: center;
+    //    margin: auto 1rem;
+    //    margin-left: auto;
+    //    vertical-align: baseline;
+   }
+
+   &-links-right {
+       text-align: center;
+     display: flex;
+    // width: 100%;
+     justify-content: center;
+    // margin: auto 1rem;
+    //margin-right: auto;
+    // vertical-align: baseline;
+}
+
+    &-link {
+        color: white;
+        margin: auto 1rem;
+        min-width: 100px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+
+
+}
+
+.logo {
+    width: 180px;
+    height: 180px;
+    cursor: pointer;
+    background-color: black;
+    //border-radius: 50%;
+    opacity: 0.8;
+    margin: 0 1.5rem;
+
+    
+}
+
+.logo-mobile{
+    display: none;
+}
+
+.logo:hover {
+    transform: scale(1.01);
+}
+
+.header-green {
+    color: green;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.header-links-mobile {
+    display: none;
+}
+
+.header-link {
+    position: relative;
+  }
+  
+  .header-link::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      border-radius: 4px;
+      background-color: lightgreen;
+      bottom: 0;
+      left: 0;
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform .3s ease-in-out;
+    }
+  
+    .header-link:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+  
+
+  @media only screen and (max-width: 960px) {
+    .header {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+        border-bottom: 0.5px solid white;
+        width: 100%;
+        
+
+        &-hamburger {
+            display:inline-block;
+            margin: 0;
+            margin-right: 1rem;
+        }
+        
+        &-bloc{
+            display: none;
+        }
+
+       &-links {
+           display: none;
+       }
+    
+        &-link {
+            color: white;
+            margin: auto 1rem;
+            text-decoration: none;
+            font-size: 16px;
+            text-transform: uppercase;
+            
+        }
+
+        @keyframes slideDownFadeIN {
+            from {top:-100px;opacity: 0;}
+            to {top:0px;opacity:1;}
+        }
+
+        &-links-mobile {
+
+            position: absolute;
+            top: 0;
+            margin-top: 76px;
+            left: 0;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+
+             animation-name: slideDownFadeIN;
+             animation-duration: 0.5s;
+            
+             display: flex;
+             flex-direction: column;
+        }
+     
+         &-link-mobile {
+            font-family: 'Press Start 2P', cursive;
+            letter-spacing: 0.2rem;
+             color: green;
+             text-decoration: none;
+             font-size: 28px;
+             font-weight: bolder;
+             text-transform: uppercase;
+             padding: 1.45rem 2rem;
+             padding: 1.8rem 2rem;
+             border-bottom: 1px solid white;
+             font-style: italic;
+             text-align: center;
+             background-color: black;
+             width: 85%;
+             text-shadow: -2px 0 1px white, 0 2px 1px white, 2px 0 1px white, 0 -2px 1px white;
+             
+         }
+
+         &-link-mobile0 {
+            font-family: 'Press Start 2P', cursive;
+             letter-spacing: 0.2rem;
+             color: green;
+             text-decoration: none;
+             font-size: 28px;
+             font-weight: bolder;
+             text-transform: uppercase;
+             padding: 1.45rem 2rem;
+             padding: 1.8rem 2rem;
+             border-bottom: 1px solid white;
+             border-top: 1px solid white;
+             font-style: italic;
+             text-align: center;
+             background-color: black;
+             width: 85%;
+             text-shadow: -2px 0 1px white, 0 2px 1px white, 2px 0 1px white, 0 -2px 1px white;
+         }
+
+         &-link-mobile1 {
+            font-family: 'Press Start 2P', cursive;
+            color: green;
+            letter-spacing: 0.2rem;
+            text-decoration: none;
+            font-size: 28px;
+            font-weight: bolder;
+            text-transform: uppercase;
+            padding: 1.45rem 2rem;
+            padding: 2rem 2rem;
+            font-style: italic;
+            background-color: black;
+            text-align: center;
+            width: 85%;
+            border-bottom: 1px solid white;
+           
+            text-shadow: -2px 0 1px white, 0 2px 1px white, 2px 0 1px white, 0 -2px 1px white;
+        }
+    
+    
+    }
+
+    .logo {
+        display: none;
+        // margin: 0;
+        // margin-left: 1rem;
+        // width:35%;
+        // cursor: pointer;
+        // background-color: black;
+        // border-radius: 50%;
+    }
+
+    .logo-mobile{
+        display:inline-block;
+        font-size: 22px;
+        margin: 0.5rem;
+        font-family: 'Press Start 2P', cursive;
+        margin: 0.5rem;
+        line-height: 130%;
+    }
+
+    .logo:hover {
+        transform: none;
+    }
+
+    .header-green {
+        color: green;
+        font-size: 32px;
+    }
+
+    .green-name{
+        font-weight: bolder;
+        color: green;
+    }
+  }
+
+  @media only screen and (max-width: 1130px) {
+    .header-link {
+      font-size: 16px;
+    }
+
+    .logo{
+        width: 130px;
+        height: 130px;
+    }
+
+    .header-green{
+        font-size: 22px;
+    }
+
+    .header-green-m {
+        color: green;
+        font-size: 28px;
+    }
+
+  }

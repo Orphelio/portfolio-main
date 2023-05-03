@@ -4,7 +4,7 @@ import orphelio from '../../images/pandaCode.png';
 import { useState } from 'react';
 import Spinner from '../Spinner/Spinner';
 import voyage from '../../images/voyage.png';
-import logo from '../../images/logo.svg';
+import logo from '../../images/LogoMakr.png';
 import Footer from '../Footer/Footer';
 
 

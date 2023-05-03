@@ -1,7 +1,7 @@
 import './About.scss';
 import React, { useEffect } from 'react';
 import { useState } from 'react';
-import profil from '../../images/profil.jpeg';
+import profil from '../../images/profil.jpg';
 import videoG from '../../images/videoG.png';
 import voyage from '../../images/voyage.png';
 import panda from '../../images/panda.png';
